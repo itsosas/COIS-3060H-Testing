@@ -159,20 +159,19 @@ describe('Generate button — success message (Issue #2)', () => {
 //   - expect getMessage() to contain 'Soup'
 //   - expect getMessage() to contain 'Salad'
 // ─────────────────────────────────────────────────────────────
-  check('starter-soup');
-  check('starter-salad');
-  check('main-steak');
-  check('dessert-icecream');
-  click('generate-btn');
-  expect(getMessage()).toContain('Soup');
-  expect(getMessage()).toContain('Salad');
 
 
 describe('Generate button — multiple selections (Issue #3)', () => {
 
   test('multiple items from the same tab all appear in the message', () => {
     // Write your test here
-
+      check('starter-soup');
+  check('starter-salad');
+  check('main-steak');
+  check('dessert-icecream');
+  click('generate-btn');
+  expect(getMessage()).toContain('Soup');
+  expect(getMessage()).toContain('Salad');
   });
 
 });
